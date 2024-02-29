@@ -33,7 +33,7 @@ RWLock cache_rw_lock;
 //std::string user_agent_str = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.169 Safari/537.36";
 //static auto user_agent_str = "subconverter/" VERSION " cURL/" LIBCURL_VERSION;
 // static user_agent_str
-static auto user_agent_str = "clash-verge/v1.5.1";
+static auto user_agent_str = "clash-verge";
 
 struct curl_progress_data
 {
@@ -183,7 +183,7 @@ static int curlGet(const FetchArgument &argument, FetchResult &result)
     header_list = curl_slist_append(header_list, "SubConverter-Request: 1");
     header_list = curl_slist_append(header_list, "SubConverter-Version: " VERSION);
     // add default user-agent
-    header_list = curl_slist_append(header_list, "User-Agent: clash-verge/v1.5.1");
+    header_list = curl_slist_append(header_list, "User-Agent: clash-verge");
     if(header_list)
         curl_easy_setopt(curl_handle, CURLOPT_HTTPHEADER, header_list);
 
