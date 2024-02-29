@@ -84,7 +84,8 @@ const std::vector<UAProfile> UAMatchList = {
     {"Surge","","","surge",false,2}, /// any version of Surge as fallback
     {"Trojan-Qt5","","","trojan"},
     {"V2rayU","","","v2ray"},
-    {"V2RayX","","","v2ray"}
+    {"V2RayX","","","v2ray"},
+    {"clash-verge","","","clash-verge"}
 };
 
 bool verGreaterEqual(const std::string& src_ver, const std::string& target_ver)
